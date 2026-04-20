@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="pt-BR"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -243,12 +244,12 @@
   <button class="btn btn-ghost" onclick="exportHTML()">📥 Salvar HTML</button>
   <button class="btn btn-ghost" id="editModeBtn" onclick="toggleEditMode()">✏️ Modo Edição</button>
   <button class="btn btn-ghost" onclick="openDatasModal()">🗓 Datas Comemorativas</button>
-  <div class="month-nav" id="monthNav"><button class="month-btn" id="mnav0">Jan</button><button class="month-btn" id="mnav1">Fev</button><button class="month-btn" id="mnav2">Mar</button><button class="month-btn active" id="mnav3">Abr</button><button class="month-btn" id="mnav4">Mai</button><button class="month-btn" id="mnav5">Jun</button><button class="month-btn" id="mnav6">Jul</button><button class="month-btn" id="mnav7">Ago</button><button class="month-btn" id="mnav8">Set</button><button class="month-btn" id="mnav9">Out</button><button class="month-btn" id="mnav10">Nov</button><button class="month-btn" id="mnav11">Dez</button></div>
+  <div class="month-nav" id="monthNav"><button class="month-btn active" id="mnav0">Jan</button><button class="month-btn" id="mnav1">Fev</button><button class="month-btn" id="mnav2">Mar</button><button class="month-btn" id="mnav3">Abr</button><button class="month-btn" id="mnav4">Mai</button><button class="month-btn" id="mnav5">Jun</button><button class="month-btn" id="mnav6">Jul</button><button class="month-btn" id="mnav7">Ago</button><button class="month-btn" id="mnav8">Set</button><button class="month-btn" id="mnav9">Out</button><button class="month-btn" id="mnav10">Nov</button><button class="month-btn" id="mnav11">Dez</button></div>
 </div>
 
 <div class="stats-bar">
-  <div class="stat-pill"><div class="num" style="color:var(--navy)" id="statTotal">13</div><div class="lbl">Total Posts</div></div>
-  <div class="stat-pill"><div class="num" style="color:var(--arte)" id="statArte">6</div><div class="lbl">Artes</div></div>
+  <div class="stat-pill"><div class="num" style="color:var(--navy)" id="statTotal">14</div><div class="lbl">Total Posts</div></div>
+  <div class="stat-pill"><div class="num" style="color:var(--arte)" id="statArte">7</div><div class="lbl">Artes</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--foto)" id="statFoto">0</div><div class="lbl">Fotos</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--story)" id="statStory">3</div><div class="lbl">Stories</div></div>
   <div class="stat-pill"><div class="num" style="color:var(--reels)" id="statReels">1</div><div class="lbl">Reels</div></div>
@@ -290,7 +291,20 @@
         <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(1,'observacoes',this.value)"></textarea>
       </div>
     </div>
-  </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🎆 Ano Novo</div><button class="add-post-btn" onclick="openModal(0,1,true)">＋ post</button></div><div class="cal-day" data-day="2"><div class="day-num">2</div><button class="add-post-btn" onclick="openModal(0,2,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="3"><div class="day-num">3</div><button class="add-post-btn" onclick="openModal(0,3,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="4"><div class="day-num">4</div><button class="add-post-btn" onclick="openModal(0,4,true)">＋ post</button></div><div class="cal-day" data-day="5"><div class="day-num">5</div><button class="add-post-btn" onclick="openModal(0,5,true)">＋ post</button></div><div class="cal-day" data-day="6"><div class="day-num">6</div><div class="special-label">🏖️ Feriado RJ</div><button class="add-post-btn" onclick="openModal(0,6,true)">＋ post</button></div><div class="cal-day" data-day="7"><div class="day-num">7</div><button class="add-post-btn" onclick="openModal(0,7,true)">＋ post</button></div><div class="cal-day" data-day="8"><div class="day-num">8</div><button class="add-post-btn" onclick="openModal(0,8,true)">＋ post</button></div><div class="cal-day" data-day="9"><div class="day-num">9</div><button class="add-post-btn" onclick="openModal(0,9,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="10"><div class="day-num">10</div><button class="add-post-btn" onclick="openModal(0,10,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="11"><div class="day-num">11</div><button class="add-post-btn" onclick="openModal(0,11,true)">＋ post</button></div><div class="cal-day" data-day="12"><div class="day-num">12</div><button class="add-post-btn" onclick="openModal(0,12,true)">＋ post</button></div><div class="cal-day" data-day="13"><div class="day-num">13</div><button class="add-post-btn" onclick="openModal(0,13,true)">＋ post</button></div><div class="cal-day" data-day="14"><div class="day-num">14</div><button class="add-post-btn" onclick="openModal(0,14,true)">＋ post</button></div><div class="cal-day" data-day="15"><div class="day-num">15</div><button class="add-post-btn" onclick="openModal(0,15,true)">＋ post</button></div><div class="cal-day" data-day="16"><div class="day-num">16</div><button class="add-post-btn" onclick="openModal(0,16,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="17"><div class="day-num">17</div><button class="add-post-btn" onclick="openModal(0,17,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="18"><div class="day-num">18</div><button class="add-post-btn" onclick="openModal(0,18,true)">＋ post</button></div><div class="cal-day" data-day="19"><div class="day-num">19</div><button class="add-post-btn" onclick="openModal(0,19,true)">＋ post</button></div><div class="cal-day" data-day="20"><div class="day-num">20</div><button class="add-post-btn" onclick="openModal(0,20,true)">＋ post</button></div><div class="cal-day" data-day="21"><div class="day-num">21</div><button class="add-post-btn" onclick="openModal(0,21,true)">＋ post</button></div><div class="cal-day" data-day="22"><div class="day-num">22</div><button class="add-post-btn" onclick="openModal(0,22,true)">＋ post</button></div><div class="cal-day" data-day="23"><div class="day-num">23</div><button class="add-post-btn" onclick="openModal(0,23,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="24"><div class="day-num">24</div><button class="add-post-btn" onclick="openModal(0,24,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="25"><div class="day-num">25</div><button class="add-post-btn" onclick="openModal(0,25,true)">＋ post</button></div><div class="cal-day" data-day="26"><div class="day-num">26</div><button class="add-post-btn" onclick="openModal(0,26,true)">＋ post</button></div><div class="cal-day" data-day="27"><div class="day-num">27</div><button class="add-post-btn" onclick="openModal(0,27,true)">＋ post</button></div><div class="cal-day" data-day="28"><div class="day-num">28</div><button class="add-post-btn" onclick="openModal(0,28,true)">＋ post</button></div><div class="cal-day" data-day="29"><div class="day-num">29</div><button class="add-post-btn" onclick="openModal(0,29,true)">＋ post</button></div><div class="cal-day" data-day="30"><div class="day-num">30</div><button class="add-post-btn" onclick="openModal(0,30,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="31"><div class="day-num">31</div><button class="add-post-btn" onclick="openModal(0,31,true)">＋ post</button></div></div></div></div></div><div class="month-block" id="month-1"><div class="month-header"><div class="month-title">Fevereiro <em>2026</em></div><div class="month-badge">Mês 2</div></div><div class="month-notes" contenteditable="true" data-month="2" placeholder="Descreva a campanha do mês, promoções, objetivos, datas importantes…"></div><div class="plan-panel">
+  </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🎆 Ano Novo</div><button class="add-post-btn" onclick="openModal(0,1,true)">＋ post</button></div><div class="cal-day" data-day="2"><div class="day-num">2</div><button class="add-post-btn" onclick="openModal(0,2,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="3"><div class="day-num">3</div><button class="add-post-btn" onclick="openModal(0,3,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="4"><div class="day-num">4</div>
+            <div class="post-card arte" onclick="openModal(0,4)">
+              <div class="card-actions">
+                <button class="card-btn" onclick="event.stopPropagation();togglePostado(0,4)" title="Toggle postado">✅</button>
+                <button class="card-btn" onclick="event.stopPropagation();openModal(0,4)">✏️</button>
+                <button class="card-btn" onclick="event.stopPropagation();deletePostByKey(0,4)">🗑</button>
+              </div>
+              <div class="post-type-tag">🎨 Arte</div>
+              
+              <div class="post-title" contenteditable="true" spellcheck="false" onclick="event.stopPropagation()" onblur="updateTitle(0,4,this.innerText)">teste</div>
+              
+              
+              <div class="card-gallery"><button class="add-thumb-btn" onclick="event.stopPropagation();triggerCardImg(0,4)" title="Adicionar foto">＋</button></div>
+            </div></div><div class="cal-day" data-day="5"><div class="day-num">5</div><button class="add-post-btn" onclick="openModal(0,5,true)">＋ post</button></div><div class="cal-day" data-day="6"><div class="day-num">6</div><div class="special-label">🏖️ Feriado RJ</div><button class="add-post-btn" onclick="openModal(0,6,true)">＋ post</button></div><div class="cal-day" data-day="7"><div class="day-num">7</div><button class="add-post-btn" onclick="openModal(0,7,true)">＋ post</button></div><div class="cal-day" data-day="8"><div class="day-num">8</div><button class="add-post-btn" onclick="openModal(0,8,true)">＋ post</button></div><div class="cal-day" data-day="9"><div class="day-num">9</div><button class="add-post-btn" onclick="openModal(0,9,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="10"><div class="day-num">10</div><button class="add-post-btn" onclick="openModal(0,10,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="11"><div class="day-num">11</div><button class="add-post-btn" onclick="openModal(0,11,true)">＋ post</button></div><div class="cal-day" data-day="12"><div class="day-num">12</div><button class="add-post-btn" onclick="openModal(0,12,true)">＋ post</button></div><div class="cal-day" data-day="13"><div class="day-num">13</div><button class="add-post-btn" onclick="openModal(0,13,true)">＋ post</button></div><div class="cal-day" data-day="14"><div class="day-num">14</div><button class="add-post-btn" onclick="openModal(0,14,true)">＋ post</button></div><div class="cal-day" data-day="15"><div class="day-num">15</div><button class="add-post-btn" onclick="openModal(0,15,true)">＋ post</button></div><div class="cal-day" data-day="16"><div class="day-num">16</div><button class="add-post-btn" onclick="openModal(0,16,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="17"><div class="day-num">17</div><button class="add-post-btn" onclick="openModal(0,17,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="18"><div class="day-num">18</div><button class="add-post-btn" onclick="openModal(0,18,true)">＋ post</button></div><div class="cal-day" data-day="19"><div class="day-num">19</div><button class="add-post-btn" onclick="openModal(0,19,true)">＋ post</button></div><div class="cal-day" data-day="20"><div class="day-num">20</div><button class="add-post-btn" onclick="openModal(0,20,true)">＋ post</button></div><div class="cal-day" data-day="21"><div class="day-num">21</div><button class="add-post-btn" onclick="openModal(0,21,true)">＋ post</button></div><div class="cal-day" data-day="22"><div class="day-num">22</div><button class="add-post-btn" onclick="openModal(0,22,true)">＋ post</button></div><div class="cal-day" data-day="23"><div class="day-num">23</div><button class="add-post-btn" onclick="openModal(0,23,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="24"><div class="day-num">24</div><button class="add-post-btn" onclick="openModal(0,24,true)">＋ post</button></div></div><div class="cal-week"><div class="cal-day wknd-col" data-day="25"><div class="day-num">25</div><button class="add-post-btn" onclick="openModal(0,25,true)">＋ post</button></div><div class="cal-day" data-day="26"><div class="day-num">26</div><button class="add-post-btn" onclick="openModal(0,26,true)">＋ post</button></div><div class="cal-day" data-day="27"><div class="day-num">27</div><button class="add-post-btn" onclick="openModal(0,27,true)">＋ post</button></div><div class="cal-day" data-day="28"><div class="day-num">28</div><button class="add-post-btn" onclick="openModal(0,28,true)">＋ post</button></div><div class="cal-day" data-day="29"><div class="day-num">29</div><button class="add-post-btn" onclick="openModal(0,29,true)">＋ post</button></div><div class="cal-day" data-day="30"><div class="day-num">30</div><button class="add-post-btn" onclick="openModal(0,30,true)">＋ post</button></div><div class="cal-day wknd-col" data-day="31"><div class="day-num">31</div><button class="add-post-btn" onclick="openModal(0,31,true)">＋ post</button></div></div></div></div></div><div class="month-block" id="month-1"><div class="month-header"><div class="month-title">Fevereiro <em>2026</em></div><div class="month-badge">Mês 2</div></div><div class="month-notes" contenteditable="true" data-month="2" placeholder="Descreva a campanha do mês, promoções, objetivos, datas importantes…"></div><div class="plan-panel">
     <div class="plan-header-row">
       <span class="plan-icon">📋</span>
       <span>Planejamento do Mês</span>
@@ -364,29 +378,29 @@
     <div class="plan-grid">
       <div class="plan-cell">
         <div class="plan-label"><span>🎯</span> Objetivos de Campanha</div>
-        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(4,'objetivos',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(4,'objetivos',this.value)">Aumentar reconhecimento na cidade.</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>💰</span> Investimento em Mídia</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(4,'investimento',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(4,'investimento',this.value)">500 reais</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>💸</span> Tráfego Pago</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(4,'trafego',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(4,'trafego',this.value)">500 reais em meta ads.</textarea>
       </div>
       <div class="plan-cell">
         <div class="plan-label"><span>🌟</span> Influenciadores</div>
-        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(4,'influenciadores',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(4,'influenciadores',this.value)">Angra TV.</textarea>
       </div>
       <div class="plan-cell" style="border-right:none">
         <div class="plan-label"><span>👤</span> Persona do Mês</div>
-        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(4,'persona',this.value)"></textarea>
+        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(4,'persona',this.value)">Público jovem que está começando a pensar na família a curto ou longo prazo.</textarea>
       </div>
     </div>
     <div class="plan-grid-bottom">
       <div class="plan-cell-full">
         <div class="plan-label"><span>📝</span> Observações Gerais</div>
-        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(4,'observacoes',this.value)"></textarea>
+        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(4,'observacoes',this.value)">Gravação na rádio dia 26 e após isso reunião.</textarea>
       </div>
     </div>
   </div><div class="cal-grid-outer"><div class="cal-dow"><div class="cal-dow-cell wknd">Dom</div><div class="cal-dow-cell">Seg</div><div class="cal-dow-cell">Ter</div><div class="cal-dow-cell">Qua</div><div class="cal-dow-cell">Qui</div><div class="cal-dow-cell">Sex</div><div class="cal-dow-cell wknd">Sáb</div></div><div class="cal-weeks"><div class="cal-week"><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day empty"><div class="day-num"></div></div><div class="cal-day" data-day="1"><div class="day-num">1</div><div class="special-label">🤥 Dia da Mentira</div>
@@ -828,14 +842,14 @@
 <div class="modal-overlay" id="modalOverlay">
   <div class="modal">
     <div class="modal-header">
-      <h3>Editar Post · <span id="modalDateLabel"></span></h3>
+      <h3>Editar Post · <span id="modalDateLabel">4/1/2026</span></h3>
       <button class="modal-close" onclick="closeModal()">✕</button>
     </div>
     <div class="modal-body">
       <div class="form-group">
         <label>Tipo de Conteúdo</label>
         <div class="type-grid">
-          <div class="type-opt" data-type="arte" onclick="selectType('arte')">🎨 Arte</div>
+          <div class="type-opt selected" data-type="arte" onclick="selectType('arte')">🎨 Arte</div>
           <div class="type-opt" data-type="foto" onclick="selectType('foto')">📸 Foto</div>
           <div class="type-opt" data-type="story" onclick="selectType('story')">📱 Story</div>
           <div class="type-opt" data-type="reels" onclick="selectType('reels')">🎬 Reels</div>
@@ -856,7 +870,7 @@
         <label>Descrição do Post</label>
         <textarea id="modalDescricao" placeholder="Descreva o que vai aparecer no story…" style="min-height:100px"></textarea>
       </div>
-      <div class="form-group" id="fieldImgObs" style="display:none">
+      <div class="form-group" id="fieldImgObs" style="">
         <label>Observações de Imagem / Vídeo</label>
         <textarea id="modalImgObs" placeholder="Descreva a imagem ideal, enquadramento, luz, referências…" style="min-height:120px"></textarea>
       </div>
@@ -873,14 +887,13 @@ Slide 2: …" style="min-height:160px"></textarea>
         <label>Nº de Slides</label>
         <input type="text" id="modalSlidesNum" placeholder="Ex: 7 slides">
       </div>
-      <div class="form-group" id="fieldCaption">
+      <div class="form-group" id="fieldCaption" style="">
         <label>Legenda completa</label>
         <textarea id="modalCaption" placeholder="Texto, hashtags, telefone…"></textarea>
       </div>
       <div class="form-group">
         <div class="mgal-label">Imagens / Fotos <span class="mgal-hint">— arraste ou clique em ＋</span></div>
-        <div class="modal-gallery" id="modalGallery" ondragover="event.preventDefault();this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleDrop(event)">
-        </div>
+        <div class="modal-gallery" id="modalGallery" ondragover="event.preventDefault();this.classList.add('drag-over')" ondragleave="this.classList.remove('drag-over')" ondrop="handleDrop(event)"><button class="mgal-add" type="button"><span style="font-size:22px">＋</span><span class="lbl">foto</span></button></div>
       </div>
       <div class="form-group" id="fieldVideoLink" style="display:none">
         <label>🎬 Link do Vídeo</label>
@@ -954,7 +967,7 @@ Slide 2: …" style="min-height:160px"></textarea>
   </div>
 </div>
 
-<div class="toast" id="toast"></div>
+<div class="toast show" id="toast">✅ Post salvo!</div>
 
 <script>
 // ─────────────────────────────────────────────
@@ -1081,576 +1094,11 @@ function applyPersistedState(state){
 function buildPersistentHtml(){
   const state = collectCalendarState();
   let html = document.documentElement.outerHTML;
-  html = html.replace(/<script id="persisted-state">[\s\S]*?<\/script>\s*/,'');
-  const persistedScript = `<script id="persisted-state">\nwindow.__PERSISTED_CALENDAR_STATE__ = ${JSON.stringify(state)};\n<\/script>\n`;
-  html = html.replace('</body>', `${persistedScript}</body>`);
-  return '<!DOCTYPE html>\n' + html;
-}
-
-async function salvarAlteracoes(){
-  try{
-    syncDomToData();
-    const token = getGithubToken();
-    const {owner, repo, path, branch} = GITHUB_CONFIG;
-    if(!owner || owner === 'COLOQUE_AQUI' || !repo || repo === 'COLOQUE_AQUI'){
-      throw new Error('Preencha owner e repo no GITHUB_CONFIG antes de salvar.');
-    }
-    const apiUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
-    const headers = {
-      Authorization: `Bearer ${token}`,
-      Accept: 'application/vnd.github+json'
-    };
-
-    const getCurrent = async ()=>{
-      const resp = await fetch(`${apiUrl}?ref=${encodeURIComponent(branch)}`, {headers});
-      if(resp.status === 404){
-        throw new Error(`Arquivo não encontrado no GitHub em ${owner}/${repo}/${path} na branch ${branch}.`);
-      }
-      if(!resp.ok){
-        throw new Error(`Falha ao ler o arquivo atual no GitHub (${resp.status}).`);
-      }
-      return await resp.json();
-    };
-
-    let currentFile = await getCurrent();
-    const updatedHtml = buildPersistentHtml();
-    const body = {
-      message: 'Atualiza calendário editorial',
-      content: btoa(unescape(encodeURIComponent(updatedHtml))),
-      sha: currentFile.sha,
-      branch
-    };
-
-    let putResp = await fetch(apiUrl, {
-      method: 'PUT',
-      headers: {...headers, 'Content-Type':'application/json'},
-      body: JSON.stringify(body)
-    });
-
-    if(putResp.status === 409){
-      currentFile = await getCurrent();
-      body.sha = currentFile.sha;
-      putResp = await fetch(apiUrl, {
-        method: 'PUT',
-        headers: {...headers, 'Content-Type':'application/json'},
-        body: JSON.stringify(body)
-      });
-    }
-
-    if(!putResp.ok){
-      const errText = await putResp.text();
-      throw new Error(`Não foi possível salvar no GitHub (${putResp.status}). ${errText}`);
-    }
-
-    showToast('💾 Alterações salvas no GitHub com sucesso!');
-  }catch(err){
-    console.error(err);
-    alert(err.message || 'Erro ao salvar alterações.');
-  }
-}
-
-const MONTH_NAMES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
-
-// Each month: { year, month(1-12), firstDow(0=Sun), days, notes, special:{day:'label'} }
-const MONTHS_CONFIG = [
-  { year:2026, month:1,  firstDow:4, days:31, notes:'', special:{1:'🎆 Ano Novo',6:'🏖️ Feriado RJ'} },
-  { year:2026, month:2,  firstDow:0, days:28, notes:'', special:{16:'🎭 Carnaval',17:'🎭 Carnaval',18:'🎭 Quarta-feira de Cinzas'} },
-  { year:2026, month:3,  firstDow:0, days:31, notes:'', special:{8:'👩 Dia da Mulher',20:'🌿 Início do Outono'} },
-  { year:2026, month:4,  firstDow:3, days:30, notes:'<strong>Real Pax Angra — Abril 2026</strong> · 10 posts + 3 stories · Tom: acolhedor, institucional, interativo · ⚠️ Pendências: nomes dos planos (dia 15) e depoimentos (dia 23)', special:{1:'🤥 Dia da Mentira',2:'🧩 Consciência do Autismo',3:'✝️ Sexta-feira Santa',5:'🐣 Páscoa',6:'São Benedito',7:'💚 Dia Mundial da Saúde',8:'🎗️ Combate ao Câncer',13:'💋 Dia do Beijo',14:'☕ Dia Mundial do Café',21:'🇧🇷 Tiradentes',22:'🌍 Dia da Terra',23:'📚 Dia Int. do Livro',24:'🥩 Dia Int. do Churrasco',28:'👩‍👧 Dia da Sogra',30:'🎷 Dia Int. do Jazz'} },
-  { year:2026, month:5,  firstDow:5, days:31, notes:'', special:{10:'💐 Dia das Mães',31:'🟡 Fim Maio Amarelo'} },
-  { year:2026, month:6,  firstDow:1, days:30, notes:'', special:{5:'🌍 Meio Ambiente',12:'💑 Dia dos Namorados'} },
-  { year:2026, month:7,  firstDow:3, days:31, notes:'', special:{} },
-  { year:2026, month:8,  firstDow:6, days:31, notes:'', special:{9:'👨 Dia dos Pais'} },
-  { year:2026, month:9,  firstDow:2, days:30, notes:'', special:{7:'🇧🇷 Independência',15:'🛍️ Dia do Cliente',22:'🌸 Primavera'} },
-  { year:2026, month:10, firstDow:4, days:31, notes:'', special:{2:'👶 Dia das Crianças',12:'🇧🇷 N.Sra. Aparecida',31:'🎃 Halloween'} },
-  { year:2026, month:11, firstDow:0, days:30, notes:'', special:{2:'✝️ Finados',15:'🇧🇷 Proclamação Rep.',20:'⚫ Black Friday'} },
-  { year:2026, month:12, firstDow:2, days:31, notes:'', special:{8:'🎄 Imaculada Conceição',25:'🎄 Natal',31:'🥂 Réveillon'} }
-];
-
-// Pre-filled posts per month [{ month, day, type, title, pending, trafego, perfil }]
-let POSTS = [{"caption":"Cuidar da família também é estar preparado para os momentos da vida. 💙\n\nO plano Real Pax oferece assistência familiar, atendimento humanizado e suporte completo quando você mais precisa.\n\nTudo pensado para garantir mais tranquilidade, segurança e cuidado para você e para quem faz parte da sua história.\n\n💬 Você descobriu qual era a mentira?\nComenta aqui!\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 – Capa\nTítulo: 3 Verdades e 1 Mentira\nSubtítulo: Descubra qual não é um benefício do plano\nElementos visuais: interrogação, ícones de checklist, estilo interativo\n\nSlide 2 – Pergunta\n1️⃣ Assistência familiar\n2️⃣ Atendimento humanizado\n3️⃣ Apoio completo para a família\n4️⃣ Viagem internacional gratuita\nLayout estilo quiz com ícones para cada item\n\nSlide 3 – Resposta\n❌ A mentira é a 4\nTexto complementar: O Real Pax oferece assistência completa e apoio à família em momentos importantes.","slidesNum":"3 slides","postado":false,"month":4,"day":1,"type":"carrossel","title":"3 Verdades e 1 Mentira","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"A Sexta-feira Santa é um momento de reflexão, silêncio e respeito.\n\nUm dia que nos convida a lembrar do valor da vida, das histórias que construímos e das pessoas que marcaram o nosso caminho.\n\nAlgumas presenças podem partir.\nMas o amor e as memórias permanecem vivos em cada história que continua sendo lembrada.\n\nQue este seja também um tempo de fé, esperança e renovação. 🤍\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Arte institucional com atmosfera de respeito e contemplação.\nFundo suave e simbólico — luz entrando por uma janela, céu ao amanhecer, vela acesa ou elemento religioso discreto.\nCores institucionais da Real Pax aplicadas de forma sutil.\nTexto principal centralizado em tipografia elegante.\nLogo da Real Pax no rodapé.\n\nTexto da arte:\nA Sexta-feira Santa nos lembra do valor da vida e das histórias que vivemos.\nPorque quem marcou o nosso caminho nunca deixa de existir nas nossas memórias.\n\nTom: sensível e contemplativo, sem qualquer tom comercial ou promocional.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":3,"type":"arte","title":"Sexta-feira Santa — Institucional","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Fundo suave em tons dourados/quentes ou com luz natural.\nElemento sutil de Páscoa (sem coelho/chocolate — foco no significado de renovação).\nLogo Real Pax Costa Verde no canto inferior.\nTexto centralizado em tipografia elegante.\n\nArte copy:\nQue a Páscoa traga renovação,\nesperança e a certeza de que\no amor nos conecta para sempre.\n\nFeliz Páscoa! 🤍\n\nReal Pax Costa Verde\nGente cuidando de gente.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":5,"type":"story","title":"Páscoa — Story","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cuidar da saúde é um gesto de amor com você e com quem está ao seu lado. 💙\n\nNo Dia Mundial da Saúde, reforçamos a importância de olhar para o bem-estar físico, emocional e também para a tranquilidade da família.\n\nTer segurança e suporte em momentos importantes também faz parte de viver com mais qualidade de vida.\n\nValorize sua saúde.\nCuide de quem você ama.\nE esteja preparado para todos os momentos da vida.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Imagem de família ou pessoa sorrindo.\nElementos de saúde (coração, cruz médica).\nCores leves e acolhedoras.\nDestaque para a frase principal: Cuidar da saúde é cuidar da vida.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":7,"type":"arte","title":"Dia Mundial da Saúde","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"No Real Pax, cuidar de pessoas significa buscar sempre novas formas de oferecer mais suporte e tranquilidade para as famílias. 💙\n\nPor isso, estamos preparando uma novidade especial que em breve estará disponível para você.\n\nUm benefício pensado para trazer ainda mais praticidade, cuidado e segurança no seu dia a dia.\n\nFique atento às próximas publicações.\nEm breve você vai descobrir. 👀\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Ícone de carregamento (loading circular).\nDesign minimalista, fundo limpo.\nSensação de novidade e expectativa.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":9,"type":"arte","title":"Aguarde… Suspense","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Família é presença, cuidado e apoio em todos os momentos da vida. 💙\n\nÉ quem está ao nosso lado nas conquistas, nos desafios e nos momentos que mais precisamos de acolhimento.\n\nCada pessoa tem uma forma especial de definir esse sentimento.\n\n💬 Qual palavra representa família para você?\nComenta aqui 👇\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Balões de conversa, ilustração de família.\nLayout focado em interação.\nEspaço visual para a pergunta central.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":13,"type":"arte","title":"Pergunta do dia — Família","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cada família tem uma história, uma rotina e necessidades diferentes. 💙\n\nPensando nisso, o Real Pax oferece planos de assistência que trazem mais tranquilidade e segurança para o dia a dia.\n\nTer um plano é garantir que, quando você precisar, terá suporte, organização e atendimento especializado.\n\nArraste para o lado e descubra qual plano pode ser o ideal para você.\n\n💬 Qual número você escolheu? Comenta aqui!\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 — Título: Escolha um número de 1 a 5\nSlide 2 — 1️⃣ Plano Essencial\nSlide 3 — 2️⃣ Plano Familiar\nSlide 4 — 3️⃣ Plano Tranquilidade\nSlide 5 — 4️⃣ Plano Proteção\nSlide 6 — 5️⃣ Plano Completo\n\nNúmeros grandes, ícones diferentes para cada plano, cores distintas por slide.\n\n⚠️ NOMES DOS PLANOS A CONFIRMAR COM O CLIENTE","slidesNum":"6 slides","postado":false,"month":4,"day":15,"type":"carrossel","title":"Escolha um número — Planos","pending":true,"trafego":false,"perfil":"","imgs":[]},{"caption":"É um assunto que muita gente evita pensar.\nMas quando acontece, a família precisa resolver tudo rapidamente.\n\nEntre urna funerária, preparação do corpo, transporte, velório, taxas do cemitério e documentação — os custos podem chegar a milhares de reais.\n\nIsso além de toda a pressão emocional do momento.\n\nPor isso, planejar é uma forma de proteger quem você ama.\n\nCom a Real Pax, você encontra planos a partir de R$ 1,50 por dia, sem taxa de adesão e sem limite de idade.\nOrganização, acolhimento e tranquilidade quando mais importa.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"Fala 1: Você já parou para pensar quanto custa morrer hoje em dia?\nFala 2: É um assunto que quase ninguém gosta de falar… mas quando acontece, a família precisa resolver tudo muito rápido.\nFala 3: E junto com a dor da perda, aparecem vários custos que muita gente nem imagina.\nFala 4: Como a urna funerária, a preparação do corpo, o transporte, a sala de velório, as taxas do cemitério, documentação e toda a organização da despedida.\nFala 5: E dependendo da estrutura escolhida, um funeral pode custar em média entre 4 mil e 10 mil reais aqui na região de Angra dos Reis.\nFala 6: Além do impacto emocional, a família ainda precisa lidar com decisões difíceis e despesas inesperadas naquele momento.\nFala 7: É justamente para evitar esse tipo de situação que existe o plano da Real Pax.\nFala 8: Aqui você encontra planos a partir de apenas R$ 1,50 por dia, sem taxa de adesão e sem limite de idade.\nFala 9: Assim, quando a família mais precisa, tudo já está organizado com cuidado, respeito e acolhimento.\nFala 10: Porque planejar também é um gesto de amor. Real Pax. Gente cuidando de gente. 📞 0800 402 2020.","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":17,"type":"reels","title":"Quanto custa um funeral?","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Algumas coisas sempre trazem lembranças especiais. 💙\n\nPode ser uma música, um lugar, um cheiro ou até uma comida que nos faz lembrar de pessoas importantes na nossa vida.\n\nSão essas memórias que mantêm vivas as histórias e os momentos que compartilhamos.\n\n💬 O que te lembra alguém especial?\nCompartilha nos comentários.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Pessoa olhando foto ou lembrança.\nEstilo emocional, cores suaves.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":20,"type":"arte","title":"Conte algo que te lembra alguém especial","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Fundo institucional com cores da marca.\nÍcone de relógio ou calendário.\nLayout limpo e direto, estilo \"aviso\".\nLogo Real Pax Costa Verde no rodapé.\n\nArte copy:\n📌 Informativo de funcionamento\n\nTerça-feira, 21 de abril\nFeriado de Tiradentes\n\nNossa central de atendimento\nfunciona normalmente 24h.\n\n📞 0800 402 2020\n📲 (24) 99871-9300\n\nReal Pax Costa Verde\nGente cuidando de gente.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":21,"type":"story","title":"Funcionamento — Tiradentes","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"O verdadeiro cuidado é percebido por quem vive a experiência. 💙\n\nAo longo do tempo, o Real Pax tem acompanhado diversas famílias oferecendo suporte, acolhimento e atendimento humanizado em momentos importantes.\n\nCada palavra de confiança reforça o nosso propósito de cuidar de pessoas com respeito e dedicação.\n\nArraste para o lado e veja alguns relatos de quem já contou com o cuidado Real Pax.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 — Título da série: Histórias de quem confia\nSlide 2 — Depoimento de cliente\nSlide 3 — Depoimento\nSlide 4 — Depoimento\nSlide 5 — Encerramento com marca\n\nAspas, layout elegante, depoimentos humanizados.\n\n⚠️ DEPOIMENTOS A COLETAR COM O CLIENTE","slidesNum":"5 slides","postado":false,"month":4,"day":23,"type":"carrossel","title":"Histórias de quem confia — Depoimentos","pending":true,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Mesmo padrão visual do story de Tiradentes.\nLogo Real Pax Costa Verde no rodapé.\n\nArte copy:\n📌 Informativo de funcionamento\n\nQuinta-feira, 23 de abril\n\nNossa central de atendimento\nfunciona normalmente 24h.\n\n📞 0800 402 2020\n📲 (24) 99871-9300\n\nReal Pax Costa Verde\nGente cuidando de gente.\n\n⚠️ Publicar na véspera (22/04) ou na manhã do dia 23.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":22,"type":"story","title":"Funcionamento — 23/04","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cuidar de pessoas vai muito além de oferecer um serviço. 💙\n\nSignifica acolher, respeitar e estar presente quando as famílias mais precisam de apoio.\n\nNo Real Pax, cada atendimento é feito com atenção, empatia e responsabilidade.\n\nPorque cada história merece cuidado.\nE cada família merece respeito.\n\nEsse é o compromisso que nos move todos os dias.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Mãos segurando, imagem humanizada.\nDestaque para as palavras principais.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":28,"type":"arte","title":"Acolhimento, Tranquilidade, Respeito","pending":false,"trafego":false,"perfil":"","imgs":[]}];
-
-// Ensure imgs array on every post
-POSTS = POSTS.map(p => ({caption:'', descricao:'', imgObs:'', roteiro:'', videoLink:'', slides:'', slidesNum:'', postado:false, ...p, imgs: p.imgs||[]}));
-
-// ── Planning data per month (saved separately) ──
-let PLAN_DATA = {"1":{},"2":{},"3":{},"4":{"objetivos":"Aumentar reconhecimento na cidade.","investimento":"500 reais","trafego":"500 reais em meta ads.","influenciadores":"Angra TV.","persona":"Público jovem que está começando a pensar na família a curto ou longo prazo.","observacoes":"Gravação na rádio dia 26 e após isso reunião."},"5":{},"6":{},"7":{},"8":{},"9":{},"10":{},"11":{},"12":{}};
-
-function getPlan(m){ return PLAN_DATA[m] || (PLAN_DATA[m]={}); }
-function savePlanField(m, field, val){ getPlan(m)[field] = val; }
-
-const TYPE_ICONS={arte:'🎨',foto:'📸',story:'📱',reels:'🎬',carrossel:'🖼'};
-const TYPE_LABELS={arte:'Arte',foto:'Foto',story:'Story',reels:'Reels',carrossel:'Carrossel'};
-const PERFIL_LABELS={'':`@realpaxangra`};
-
-let currentMonthIdx=null, currentDay=null, currentPostIdx=null;
-let modalType='arte', modalImgs=[];
-let _editMode=true;
-let _lbMonthIdx=null, _lbDay=null, _lbIdx=0;
-
-const esc=s=>(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
-
-function getPost(mIdx,day){return POSTS.find(p=>p.month===MONTHS_CONFIG[mIdx].month&&p.day===day);}
-function getPostIdx(mIdx,day){return POSTS.findIndex(p=>p.month===MONTHS_CONFIG[mIdx].month&&p.day===day);}
-
-// ── Stats ──
-function updateStats(){
-  const c={total:0,arte:0,foto:0,story:0,reels:0,carrossel:0,pend:0,postado:0};
-  POSTS.forEach(p=>{c.total++;if(c[p.type]!==undefined)c[p.type]++;if(p.pending)c.pend++;if(p.postado)c.postado++;});
-  ['Total','Arte','Foto','Story','Reels','Carrossel','Pend','Postado'].forEach(k=>{
-    const el=document.getElementById('stat'+k);
-    if(el)el.textContent=c[k.toLowerCase()];
-  });
-}
-
-// ── Build Month Nav ──
-function buildMonthNav(){
-  const nav=document.getElementById('monthNav');
-  if(!nav) return;
-  nav.innerHTML='';
-  MONTHS_CONFIG.forEach((mc,i)=>{
-    const btn=document.createElement('button');
-    btn.className='month-btn' + (i===3 ? ' active' : '');
-    btn.textContent=MONTH_NAMES[mc.month-1].substring(0,3);
-    btn.onclick=()=>scrollToMonth(i);
-    btn.id='mnav'+i;
-    nav.appendChild(btn);
-  });
-}
-
-function scrollToMonth(i){
-  const el=document.getElementById('month-'+i);
-  if(el)el.scrollIntoView({behavior:'smooth',block:'start'});
-}
-
-// ── Render All Months ──
-function renderAll(){
-  const container=document.getElementById('monthsContainer');
-  container.innerHTML='';
-  MONTHS_CONFIG.forEach((mc,mIdx)=>{
-    container.appendChild(buildMonthBlock(mc,mIdx));
-  });
-  updateStats();
-}
-
-function buildPlanPanel(mc){
-  const m = mc.month;
-  const p = getPlan(m);
-  const panel = document.createElement('div');
-  panel.className = 'plan-panel';
-
-  panel.innerHTML = `
-    <div class="plan-header-row">
-      <span class="plan-icon">📋</span>
-      <span>Planejamento do Mês</span>
-    </div>
-    <div class="plan-grid">
-      <div class="plan-cell">
-        <div class="plan-label"><span>🎯</span> Objetivos de Campanha</div>
-        <textarea class="plan-input tall" placeholder="Ex: Aumentar leads, lançar promoção, gerar awareness…" onchange="savePlanField(${m},'objetivos',this.value)">${p.objetivos||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>💰</span> Investimento em Mídia</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 1.000 — Meta Ads + Google Ads…" onchange="savePlanField(${m},'investimento',this.value)">${p.investimento||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>💸</span> Tráfego Pago</div>
-        <textarea class="plan-input tall" placeholder="Ex: R$ 600 Meta Ads (feed + stories), R$ 400 Google. Públicos, segmentações…" onchange="savePlanField(${m},'trafego',this.value)">${p.trafego||''}</textarea>
-      </div>
-      <div class="plan-cell">
-        <div class="plan-label"><span>🌟</span> Influenciadores</div>
-        <textarea class="plan-input tall" placeholder="Ex: @perfil — tipo de conteúdo, formato, prazo…" onchange="savePlanField(${m},'influenciadores',this.value)">${p.influenciadores||''}</textarea>
-      </div>
-      <div class="plan-cell" style="border-right:none">
-        <div class="plan-label"><span>👤</span> Persona do Mês</div>
-        <textarea class="plan-input tall" placeholder="Ex: Público-alvo, faixa etária, dores, plataformas que usa…" onchange="savePlanField(${m},'persona',this.value)">${p.persona||''}</textarea>
-      </div>
-    </div>
-    <div class="plan-grid-bottom">
-      <div class="plan-cell-full">
-        <div class="plan-label"><span>📝</span> Observações Gerais</div>
-        <textarea class="plan-input" style="min-height:48px;resize:vertical" placeholder="Anotações livres, pendências, decisões, reuniões, contatos…" onchange="savePlanField(${m},'observacoes',this.value)">${p.observacoes||''}</textarea>
-      </div>
-    </div>
-  `;
-  return panel;
-}
-
-function buildMonthBlock(mc,mIdx){
-  const block=document.createElement('div');
-  block.className='month-block';
-  block.id='month-'+mIdx;
-
-  // Header
-  const mh=document.createElement('div');
-  mh.className='month-header';
-  mh.innerHTML=`<div class="month-title">${MONTH_NAMES[mc.month-1]} <em>${mc.year}</em></div><div class="month-badge">Mês ${mc.month}</div>`;
-  block.appendChild(mh);
-
-  // Notes
-  const mn=document.createElement('div');
-  mn.className='month-notes';
-  mn.contentEditable='true';
-  mn.setAttribute('data-month', mc.month);
-  mn.setAttribute('placeholder', 'Descreva a campanha do mês, promoções, objetivos, datas importantes…');
-  mn.innerHTML = mc.notes || '';
-  mn.addEventListener('input', ()=>{ MONTHS_CONFIG[mIdx].notes = mn.innerHTML; });
-  block.appendChild(mn);
-
-  // Planning panel
-  block.appendChild(buildPlanPanel(mc));
-  const outer=document.createElement('div');
-  outer.className='cal-grid-outer';
-  // DOW header
-  const dow=document.createElement('div');
-  dow.className='cal-dow';
-  ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'].forEach((d,i)=>{
-    const c=document.createElement('div');
-    c.className='cal-dow-cell'+(i===0||i===6?' wknd':'');
-    c.textContent=d;
-    dow.appendChild(c);
-  });
-  outer.appendChild(dow);
-
-  // Build weeks array
-  const weeks=[];
-  let week=[];
-  // pad start
-  for(let p=0;p<mc.firstDow;p++) week.push(0);
-  for(let d=1;d<=mc.days;d++){
-    week.push(d);
-    if(week.length===7){weeks.push(week);week=[];}
-  }
-  if(week.length>0){while(week.length<7)week.push(0);weeks.push(week);}
-
-  const calWeeks=document.createElement('div');
-  calWeeks.className='cal-weeks';
-
-  weeks.forEach(wk=>{
-    const weekEl=document.createElement('div');
-    weekEl.className='cal-week';
-    wk.forEach((day,i)=>{
-      const isWknd=(i===0||i===6);
-      const cell=document.createElement('div');
-      cell.className='cal-day'+(day===0?' empty':'')+(isWknd&&day>0?' wknd-col':'');
-      if(day>0){
-        cell.dataset.day=day;
-        let html=`<div class="day-num">${day}</div>`;
-        if(mc.special&&mc.special[day]){
-          html+=`<div class="special-label">${mc.special[day]}</div>`;
-        }
-        const post=getPost(mIdx,day);
-        if(post){
-          const pc=post.pending?' pendente':post.postado?' postado':'';
-          let gallHtml='<div class="card-gallery">';
-          (post.imgs||[]).forEach((src,idx)=>{
-            gallHtml+=`<div class="card-thumb" onclick="event.stopPropagation();onThumbClick(${mIdx},${day},${idx})"><img src="${src}" alt=""><button class="rm-thumb" onclick="event.stopPropagation();removeCardThumb(${mIdx},${day},${idx})">✕</button></div>`;
-          });
-          gallHtml+=`<button class="add-thumb-btn" onclick="event.stopPropagation();triggerCardImg(${mIdx},${day})" title="Adicionar foto">＋</button></div>`;
-          const postadoBadge=post.postado?`<div class="postado-badge">✅ Postado</div>`:'';
-          const videoBadge=(post.type==='reels'&&post.videoLink)?`<a class="video-link-badge" href="${esc(post.videoLink)}" target="_blank" onclick="event.stopPropagation()">🎬 Ver</a>`:'';
-          const tpIcon=post.trafego?`<div class="tp-icon" title="Tráfego Pago">💸</div>`:'';
-          const perfilTag=post.perfil?`<div class="post-meta">${PERFIL_LABELS[post.perfil]||''}</div>`:'';
-          html+=`
-            <div class="post-card ${post.type}${pc}" onclick="openModal(${mIdx},${day})">
-              <div class="card-actions">
-                <button class="card-btn" onclick="event.stopPropagation();togglePostado(${mIdx},${day})" title="Toggle postado">${post.postado?'↩️':'✅'}</button>
-                <button class="card-btn" onclick="event.stopPropagation();openModal(${mIdx},${day})">✏️</button>
-                <button class="card-btn" onclick="event.stopPropagation();deletePostByKey(${mIdx},${day})">🗑</button>
-              </div>
-              <div class="post-type-tag">${TYPE_ICONS[post.type]||''} ${TYPE_LABELS[post.type]||post.type}${post.pending?' · ⏳':''}</div>
-              ${postadoBadge}${videoBadge}
-              <div class="post-title" contenteditable="${_editMode?'true':'false'}" spellcheck="false"
-                onclick="event.stopPropagation()"
-                onblur="updateTitle(${mIdx},${day},this.innerText)">${esc(post.title)}</div>
-              ${perfilTag}
-              ${tpIcon}
-              ${gallHtml}
-            </div>`;
-        } else {
-          html+=`<button class="add-post-btn" onclick="openModal(${mIdx},${day},true)">＋ post</button>`;
-        }
-        cell.innerHTML=html;
-      } else {
-        cell.innerHTML='<div class="day-num"></div>';
-      }
-      weekEl.appendChild(cell);
-    });
-    calWeeks.appendChild(weekEl);
-  });
-
-  outer.appendChild(calWeeks);
-  block.appendChild(outer);
-  return block;
-}
-
-function updateTitle(mIdx,day,t){
-  const i=getPostIdx(mIdx,day);
-  if(i>=0)POSTS[i].title=t.trim();
-}
-
-// ── Modal ──
-function openModal(mIdx,day,isNew=false){
-  currentMonthIdx=mIdx; currentDay=day;
-  const idx=getPostIdx(mIdx,day); currentPostIdx=idx;
-  const post=idx>=0?POSTS[idx]:null;
-  const mc=MONTHS_CONFIG[mIdx];
-  document.getElementById('modalDateLabel').textContent=`${day}/${mc.month}/${mc.year}`;
-  modalType=post?post.type:'arte';
-  modalImgs=post?[...(post.imgs||[])]:[];
-  document.getElementById('modalPostTitle').value=post?.title||'';
-  document.getElementById('modalCaption').value=post?.caption||'';
-  document.getElementById('modalDescricao').value=post?.descricao||'';
-  document.getElementById('modalImgObs').value=post?.imgObs||'';
-  document.getElementById('modalRoteiro').value=post?.roteiro||'';
-  document.getElementById('modalSlides').value=post?.slides||'';
-  document.getElementById('modalSlidesNum').value=post?.slidesNum||'';
-  document.getElementById('modalVideoLink').value=post?.videoLink||'';
-  document.getElementById('modalPending').checked=post?.pending||false;
-  document.getElementById('modalPostado').checked=post?.postado||false;
-  document.getElementById('modalTrafego').checked=post?.trafego||false;
-  document.getElementById('modalPerfil').value=post?.perfil||'';
-  document.querySelectorAll('.type-opt').forEach(el=>el.classList.toggle('selected',el.dataset.type===modalType));
-  updateModalFields(modalType);
-  renderModalGallery();
-  document.getElementById('modalOverlay').classList.add('open');
-}
-function closeModal(){document.getElementById('modalOverlay').classList.remove('open');currentMonthIdx=null;currentDay=null;}
-function selectType(t){
-  modalType=t;
-  document.querySelectorAll('.type-opt').forEach(el=>el.classList.toggle('selected',el.dataset.type===t));
-  updateModalFields(t);
-}
-function updateModalFields(t){
-  const show=id=>{const el=document.getElementById(id);if(el)el.style.display='';};
-  const hide=id=>{const el=document.getElementById(id);if(el)el.style.display='none';};
-  ['fieldCaption','fieldDescricao','fieldImgObs','fieldRoteiro','fieldSlides','fieldSlidesNum','fieldVideoLink'].forEach(hide);
-  if(t==='story'){show('fieldDescricao');}
-  else if(t==='reels'){show('fieldVideoLink');show('fieldCaption');show('fieldRoteiro');}
-  else if(t==='carrossel'){show('fieldCaption');show('fieldSlides');show('fieldSlidesNum');}
-  else{show('fieldCaption');show('fieldImgObs');}
-}
-
-function renderModalGallery(){
-  const gal=document.getElementById('modalGallery');gal.innerHTML='';
-  modalImgs.forEach((src,i)=>{
-    const w=document.createElement('div');w.className='mgal-thumb';
-    w.innerHTML=`<img src="${src}" alt=""><button class="rm-btn" onclick="removeModalImg(${i})" type="button">✕</button>`;
-    gal.appendChild(w);
-  });
-  const btn=document.createElement('button');btn.className='mgal-add';btn.type='button';
-  btn.innerHTML='<span style="font-size:22px">＋</span><span class="lbl">foto</span>';
-  btn.onclick=()=>{
-    const inp=document.createElement('input');inp.type='file';inp.accept='image/*';inp.multiple=true;inp.style.display='none';document.body.appendChild(inp);
-    inp.onchange=e=>handleGalleryFiles(Array.from(e.target.files));inp.click();
-  };
-  gal.appendChild(btn);
-}
-function handleGalleryFiles(files){
-  if(!files.length)return;let n=0;
-  files.forEach(f=>{const r=new FileReader();r.onload=e=>{modalImgs.push(e.target.result);if(++n===files.length)renderModalGallery();};r.readAsDataURL(f);});
-}
-function handleDrop(e){e.preventDefault();document.getElementById('modalGallery').classList.remove('drag-over');handleGalleryFiles(Array.from(e.dataTransfer.files).filter(f=>f.type.startsWith('image/')));}
-function removeModalImg(i){modalImgs.splice(i,1);renderModalGallery();}
-
-function savePost(){
-  const title=document.getElementById('modalPostTitle').value.trim();
-  if(!title){alert('Por favor, adicione um título.');return;}
-  const mc=MONTHS_CONFIG[currentMonthIdx];
-  const pd={
-    month:mc.month,day:currentDay,type:modalType,title,
-    perfil:document.getElementById('modalPerfil').value,
-    caption:document.getElementById('modalCaption').value,
-    descricao:document.getElementById('modalDescricao').value,
-    imgObs:document.getElementById('modalImgObs').value,
-    roteiro:document.getElementById('modalRoteiro').value,
-    videoLink:document.getElementById('modalVideoLink').value.trim(),
-    slides:document.getElementById('modalSlides').value,
-    slidesNum:document.getElementById('modalSlidesNum').value,
-    pending:document.getElementById('modalPending').checked,
-    postado:document.getElementById('modalPostado').checked,
-    trafego:document.getElementById('modalTrafego').checked,
-    imgs:[...modalImgs]
-  };
-  if(currentPostIdx>=0){POSTS[currentPostIdx]=pd;}else{POSTS.push(pd);}
-  closeModal();renderAll();showToast('✅ Post salvo!');
-}
-function deletePost(){if(!confirm('Excluir este post?'))return;deletePostByKey(currentMonthIdx,currentDay);closeModal();}
-function deletePostByKey(mIdx,day){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i>=0){POSTS.splice(i,1);renderAll();showToast('Post excluído.');}
-}
-function togglePostado(mIdx,day){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i<0)return;
-  POSTS[i].postado=!POSTS[i].postado;
-  if(POSTS[i].postado)POSTS[i].pending=false;
-  renderAll();showToast(POSTS[i].postado?'✅ Marcado como postado!':'↩️ Desmarcado.');
-}
-
-// ── Card image upload ──
-let _cardMIdx=null,_cardDay2=null;
-const _cardIn=document.createElement('input');
-_cardIn.type='file';_cardIn.accept='image/*';_cardIn.multiple=true;_cardIn.style.display='none';
-document.body.appendChild(_cardIn);
-_cardIn.addEventListener('change',e=>{
-  const files=Array.from(e.target.files);
-  if(!files.length||_cardMIdx===null)return;
-  const mc=MONTHS_CONFIG[_cardMIdx];
-  const idx=POSTS.findIndex(p=>p.month===mc.month&&p.day===_cardDay2);
-  if(idx<0)return;
-  let n=0;
-  files.forEach(f=>{const r=new FileReader();r.onload=ev=>{POSTS[idx].imgs=POSTS[idx].imgs||[];POSTS[idx].imgs.push(ev.target.result);if(++n===files.length){renderAll();showToast(`${files.length} imagem(ns) adicionada(s)!`);}};r.readAsDataURL(f);});
-  _cardIn.value='';
-});
-function triggerCardImg(mIdx,day){_cardMIdx=mIdx;_cardDay2=day;_cardIn.click();}
-function removeCardThumb(mIdx,day,idx){
-  const mc=MONTHS_CONFIG[mIdx];
-  const i=POSTS.findIndex(p=>p.month===mc.month&&p.day===day);
-  if(i>=0){POSTS[i].imgs.splice(idx,1);renderAll();showToast('Imagem removida.');}
-}
-
-// ── Lightbox ──
-function onThumbClick(mIdx,day,idx){
-  if(_editMode){removeCardThumb(mIdx,day,idx);return;}
-  openLightbox(mIdx,day,idx);
-}
-function openLightbox(mIdx,day,idx){
-  const post=getPost(mIdx,day);
-  if(!post||!post.imgs||!post.imgs.length)return;
-  _lbMonthIdx=mIdx;_lbDay=day;_lbIdx=idx;
-  renderLightbox();
-  document.getElementById('lightbox').classList.add('open');
-  document.addEventListener('keydown',lbKeyHandler);
-}
-function renderLightbox(){
-  const post=getPost(_lbMonthIdx,_lbDay);if(!post)return;
-  const imgs=post.imgs||[];
-  document.getElementById('lbImg').src=imgs[_lbIdx]||'';
-  document.getElementById('lbTitle').textContent=post.title;
-  const mc=MONTHS_CONFIG[_lbMonthIdx];
-  document.getElementById('lbDate').textContent=`${_lbDay}/${mc.month}/${mc.year} · ${TYPE_LABELS[post.type]||post.type}`;
-  document.getElementById('lbCounter').textContent=imgs.length>1?`${_lbIdx+1} / ${imgs.length}`:'';
-  document.getElementById('lbPrev').disabled=_lbIdx===0;
-  document.getElementById('lbNext').disabled=_lbIdx===imgs.length-1;
-}
-function lbStep(dir){
-  const post=getPost(_lbMonthIdx,_lbDay);if(!post)return;
-  _lbIdx=Math.max(0,Math.min(_lbIdx+dir,(post.imgs||[]).length-1));renderLightbox();
-}
-function closeLightbox(){document.getElementById('lightbox').classList.remove('open');document.removeEventListener('keydown',lbKeyHandler);}
-function lbKeyHandler(e){if(e.key==='Escape')closeLightbox();if(e.key==='ArrowRight')lbStep(1);if(e.key==='ArrowLeft')lbStep(-1);}
-
-// ── Edit Mode ──
-function toggleEditMode(){
-  _editMode=!_editMode;
-  document.body.classList.toggle('view-mode',!_editMode);
-  document.querySelectorAll('.post-title').forEach(el=>{el.contentEditable=_editMode?'true':'false';});
-  const btn=document.getElementById('editModeBtn');
-  if(_editMode){btn.textContent='✏️ Modo Edição';btn.classList.remove('btn-cyan');btn.classList.add('btn-ghost');showToast('✏️ Modo edição ativado');}
-  else{btn.textContent='🔒 Edição Bloqueada';btn.classList.remove('btn-ghost');btn.classList.add('btn-cyan');showToast('🔒 Bloqueado · clique nas fotos para ampliar');}
-}
-
-// ── Datas Comemorativas ──
-function openDatasModal(){
-  const sel = document.getElementById('datasMonthSel');
-  sel.value = '1';
-  renderDatasList();
-  document.getElementById('datasOverlay').classList.add('open');
-}
-function closeDatasModal(){
-  document.getElementById('datasOverlay').classList.remove('open');
-}
-function renderDatasList(){
-  const mIdx = parseInt(document.getElementById('datasMonthSel').value) - 1;
-  const mc = MONTHS_CONFIG[mIdx];
-  const list = document.getElementById('datasList');
-  list.innerHTML = '';
-  Object.entries(mc.special || {}).forEach(([day, label]) => {
-    list.appendChild(makeDataRow(day, label));
-  });
-}
-function makeDataRow(day='', label=''){
-  const row = document.createElement('div');
-  row.className = 'data-row';
-  row.innerHTML = `
-    <input class="day-input" type="number" min="1" max="31" placeholder="Dia" value="${day}" style="border:1.5px solid var(--border);border-radius:8px;padding:7px 10px;font-family:'DM Sans',sans-serif;font-size:13px;text-align:center;outline:none;width:100%;">
-    <input class="label-input" type="text" placeholder="Ex: 🌸 Dia das Mães" value="${label}" style="border:1.5px solid var(--border);border-radius:8px;padding:7px 12px;font-family:'DM Sans',sans-serif;font-size:13px;outline:none;width:100%;">
-    <button class="rm-data-btn" onclick="this.closest('.data-row').remove()" style="width:34px;height:34px;border-radius:8px;border:none;background:#fee2e2;color:#be1f1f;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;">🗑</button>
-  `;
-  return row;
-}
-function addDataRow(){
-  document.getElementById('datasList').appendChild(makeDataRow());
-}
-function saveDatas(){
-  const mIdx = parseInt(document.getElementById('datasMonthSel').value) - 1;
-  const rows = document.querySelectorAll('#datasList .data-row');
-  const newSpecial = {};
-  rows.forEach(row => {
-    const day   = parseInt(row.querySelector('.day-input').value);
-    const label = row.querySelector('.label-input').value.trim();
-    if(day >= 1 && day <= 31 && label) newSpecial[day] = label;
-  });
-  MONTHS_CONFIG[mIdx].special = newSpecial;
-  closeDatasModal();
-  renderAll();
-  showToast('🗓 Datas comemorativas atualizadas!');
-}
-document.getElementById('datasMonthSel').addEventListener('change', renderDatasList);
-document.getElementById('datasOverlay').addEventListener('click', e=>{if(e.target===e.currentTarget)closeDatasModal();});
-
-// ── Export ──
-function exportHTML(){
-  try{
-    const src = buildPersistentHtml();
-    const client = (document.getElementById('hdrClient')?.innerText || '').trim();
-    const year = (document.getElementById('hdrYear')?.innerText || '').trim();
-    const safeName = (client || 'editavel').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-    const blob = new Blob([src], { type: 'text/html;charset=utf-8' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `calendario-editorial-${safeName || 'editavel'}-${year || '2026'}.html`;
-    document.body.appendChild(a);
-    a.click();
-    setTimeout(() => {
-      URL.revokeObjectURL(a.href);
-      a.remove();
-    }, 100);
-  }catch(err){
-    console.error(err);
-    alert('Erro ao exportar HTML: ' + (err.message || err));
-  }
-}
-
-function showToast(msg){
-  const t=document.getElementById('toast');t.textContent=msg;
-  t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2800);
-}
-
-document.getElementById('modalOverlay').addEventListener('click',e=>{if(e.target===e.currentTarget)closeModal();});
-
-// ── Init ──
-if(window.__PERSISTED_CALENDAR_STATE__){
-  applyPersistedState(window.__PERSISTED_CALENDAR_STATE__);
-}
-buildMonthNav();
-renderAll();
-
-// Intersection observer to highlight active month in nav
-const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      const id=e.target.id;
-      const idx=parseInt(id.replace('month-',''));
-      document.querySelectorAll('.month-btn').forEach((b,i)=>b.classList.toggle('active',i===idx));
-    }
-  });
-},{threshold:0.15});
-document.querySelectorAll('.month-block').forEach(el=>observer.observe(el));
-</script><input type="file" accept="image/*" multiple="" style="display: none;">
+  html = html.replace(/<input type="file" accept="image/*" multiple="" style="display: none;"><input type="file" accept="image/*" multiple="" style="display: none;">
 
 
+
+<script id="persisted-state">
+window.__PERSISTED_CALENDAR_STATE__ = {"header":{"client":"Real Pax Costa Verde","year":"2026","sub":"CALENDÁRIO EDITORIAL — @REALPAXANGRA"},"months":[{"year":2026,"month":1,"firstDow":4,"days":31,"notes":"","special":{"1":"🎆 Ano Novo","6":"🏖️ Feriado RJ"}},{"year":2026,"month":2,"firstDow":0,"days":28,"notes":"","special":{"16":"🎭 Carnaval","17":"🎭 Carnaval","18":"🎭 Quarta-feira de Cinzas"}},{"year":2026,"month":3,"firstDow":0,"days":31,"notes":"","special":{"8":"👩 Dia da Mulher","20":"🌿 Início do Outono"}},{"year":2026,"month":4,"firstDow":3,"days":30,"notes":"<strong>Real Pax Angra — Abril 2026</strong> · 10 posts + 3 stories · Tom: acolhedor, institucional, interativo · ⚠️ Pendências: nomes dos planos (dia 15) e depoimentos (dia 23)","special":{"1":"🤥 Dia da Mentira","2":"🧩 Consciência do Autismo","3":"✝️ Sexta-feira Santa","5":"🐣 Páscoa","6":"São Benedito","7":"💚 Dia Mundial da Saúde","8":"🎗️ Combate ao Câncer","13":"💋 Dia do Beijo","14":"☕ Dia Mundial do Café","21":"🇧🇷 Tiradentes","22":"🌍 Dia da Terra","23":"📚 Dia Int. do Livro","24":"🥩 Dia Int. do Churrasco","28":"👩‍👧 Dia da Sogra","30":"🎷 Dia Int. do Jazz"}},{"year":2026,"month":5,"firstDow":5,"days":31,"notes":"","special":{"10":"💐 Dia das Mães","31":"🟡 Fim Maio Amarelo"}},{"year":2026,"month":6,"firstDow":1,"days":30,"notes":"","special":{"5":"🌍 Meio Ambiente","12":"💑 Dia dos Namorados"}},{"year":2026,"month":7,"firstDow":3,"days":31,"notes":"","special":{}},{"year":2026,"month":8,"firstDow":6,"days":31,"notes":"","special":{"9":"👨 Dia dos Pais"}},{"year":2026,"month":9,"firstDow":2,"days":30,"notes":"","special":{"7":"🇧🇷 Independência","15":"🛍️ Dia do Cliente","22":"🌸 Primavera"}},{"year":2026,"month":10,"firstDow":4,"days":31,"notes":"","special":{"2":"👶 Dia das Crianças","12":"🇧🇷 N.Sra. Aparecida","31":"🎃 Halloween"}},{"year":2026,"month":11,"firstDow":0,"days":30,"notes":"","special":{"2":"✝️ Finados","15":"🇧🇷 Proclamação Rep.","20":"⚫ Black Friday"}},{"year":2026,"month":12,"firstDow":2,"days":31,"notes":"","special":{"8":"🎄 Imaculada Conceição","25":"🎄 Natal","31":"🥂 Réveillon"}}],"posts":[{"caption":"Cuidar da família também é estar preparado para os momentos da vida. 💙\n\nO plano Real Pax oferece assistência familiar, atendimento humanizado e suporte completo quando você mais precisa.\n\nTudo pensado para garantir mais tranquilidade, segurança e cuidado para você e para quem faz parte da sua história.\n\n💬 Você descobriu qual era a mentira?\nComenta aqui!\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 – Capa\nTítulo: 3 Verdades e 1 Mentira\nSubtítulo: Descubra qual não é um benefício do plano\nElementos visuais: interrogação, ícones de checklist, estilo interativo\n\nSlide 2 – Pergunta\n1️⃣ Assistência familiar\n2️⃣ Atendimento humanizado\n3️⃣ Apoio completo para a família\n4️⃣ Viagem internacional gratuita\nLayout estilo quiz com ícones para cada item\n\nSlide 3 – Resposta\n❌ A mentira é a 4\nTexto complementar: O Real Pax oferece assistência completa e apoio à família em momentos importantes.","slidesNum":"3 slides","postado":false,"month":4,"day":1,"type":"carrossel","title":"3 Verdades e 1 Mentira","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"A Sexta-feira Santa é um momento de reflexão, silêncio e respeito.\n\nUm dia que nos convida a lembrar do valor da vida, das histórias que construímos e das pessoas que marcaram o nosso caminho.\n\nAlgumas presenças podem partir.\nMas o amor e as memórias permanecem vivos em cada história que continua sendo lembrada.\n\nQue este seja também um tempo de fé, esperança e renovação. 🤍\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Arte institucional com atmosfera de respeito e contemplação.\nFundo suave e simbólico — luz entrando por uma janela, céu ao amanhecer, vela acesa ou elemento religioso discreto.\nCores institucionais da Real Pax aplicadas de forma sutil.\nTexto principal centralizado em tipografia elegante.\nLogo da Real Pax no rodapé.\n\nTexto da arte:\nA Sexta-feira Santa nos lembra do valor da vida e das histórias que vivemos.\nPorque quem marcou o nosso caminho nunca deixa de existir nas nossas memórias.\n\nTom: sensível e contemplativo, sem qualquer tom comercial ou promocional.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":3,"type":"arte","title":"Sexta-feira Santa — Institucional","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Fundo suave em tons dourados/quentes ou com luz natural.\nElemento sutil de Páscoa (sem coelho/chocolate — foco no significado de renovação).\nLogo Real Pax Costa Verde no canto inferior.\nTexto centralizado em tipografia elegante.\n\nArte copy:\nQue a Páscoa traga renovação,\nesperança e a certeza de que\no amor nos conecta para sempre.\n\nFeliz Páscoa! 🤍\n\nReal Pax Costa Verde\nGente cuidando de gente.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":5,"type":"story","title":"Páscoa — Story","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cuidar da saúde é um gesto de amor com você e com quem está ao seu lado. 💙\n\nNo Dia Mundial da Saúde, reforçamos a importância de olhar para o bem-estar físico, emocional e também para a tranquilidade da família.\n\nTer segurança e suporte em momentos importantes também faz parte de viver com mais qualidade de vida.\n\nValorize sua saúde.\nCuide de quem você ama.\nE esteja preparado para todos os momentos da vida.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Imagem de família ou pessoa sorrindo.\nElementos de saúde (coração, cruz médica).\nCores leves e acolhedoras.\nDestaque para a frase principal: Cuidar da saúde é cuidar da vida.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":7,"type":"arte","title":"Dia Mundial da Saúde","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"No Real Pax, cuidar de pessoas significa buscar sempre novas formas de oferecer mais suporte e tranquilidade para as famílias. 💙\n\nPor isso, estamos preparando uma novidade especial que em breve estará disponível para você.\n\nUm benefício pensado para trazer ainda mais praticidade, cuidado e segurança no seu dia a dia.\n\nFique atento às próximas publicações.\nEm breve você vai descobrir. 👀\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Ícone de carregamento (loading circular).\nDesign minimalista, fundo limpo.\nSensação de novidade e expectativa.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":9,"type":"arte","title":"Aguarde… Suspense","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Família é presença, cuidado e apoio em todos os momentos da vida. 💙\n\nÉ quem está ao nosso lado nas conquistas, nos desafios e nos momentos que mais precisamos de acolhimento.\n\nCada pessoa tem uma forma especial de definir esse sentimento.\n\n💬 Qual palavra representa família para você?\nComenta aqui 👇\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Balões de conversa, ilustração de família.\nLayout focado em interação.\nEspaço visual para a pergunta central.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":13,"type":"arte","title":"Pergunta do dia — Família","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cada família tem uma história, uma rotina e necessidades diferentes. 💙\n\nPensando nisso, o Real Pax oferece planos de assistência que trazem mais tranquilidade e segurança para o dia a dia.\n\nTer um plano é garantir que, quando você precisar, terá suporte, organização e atendimento especializado.\n\nArraste para o lado e descubra qual plano pode ser o ideal para você.\n\n💬 Qual número você escolheu? Comenta aqui!\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 — Título: Escolha um número de 1 a 5\nSlide 2 — 1️⃣ Plano Essencial\nSlide 3 — 2️⃣ Plano Familiar\nSlide 4 — 3️⃣ Plano Tranquilidade\nSlide 5 — 4️⃣ Plano Proteção\nSlide 6 — 5️⃣ Plano Completo\n\nNúmeros grandes, ícones diferentes para cada plano, cores distintas por slide.\n\n⚠️ NOMES DOS PLANOS A CONFIRMAR COM O CLIENTE","slidesNum":"6 slides","postado":false,"month":4,"day":15,"type":"carrossel","title":"Escolha um número — Planos","pending":true,"trafego":false,"perfil":"","imgs":[]},{"caption":"É um assunto que muita gente evita pensar.\nMas quando acontece, a família precisa resolver tudo rapidamente.\n\nEntre urna funerária, preparação do corpo, transporte, velório, taxas do cemitério e documentação — os custos podem chegar a milhares de reais.\n\nIsso além de toda a pressão emocional do momento.\n\nPor isso, planejar é uma forma de proteger quem você ama.\n\nCom a Real Pax, você encontra planos a partir de R$ 1,50 por dia, sem taxa de adesão e sem limite de idade.\nOrganização, acolhimento e tranquilidade quando mais importa.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"Fala 1: Você já parou para pensar quanto custa morrer hoje em dia?\nFala 2: É um assunto que quase ninguém gosta de falar… mas quando acontece, a família precisa resolver tudo muito rápido.\nFala 3: E junto com a dor da perda, aparecem vários custos que muita gente nem imagina.\nFala 4: Como a urna funerária, a preparação do corpo, o transporte, a sala de velório, as taxas do cemitério, documentação e toda a organização da despedida.\nFala 5: E dependendo da estrutura escolhida, um funeral pode custar em média entre 4 mil e 10 mil reais aqui na região de Angra dos Reis.\nFala 6: Além do impacto emocional, a família ainda precisa lidar com decisões difíceis e despesas inesperadas naquele momento.\nFala 7: É justamente para evitar esse tipo de situação que existe o plano da Real Pax.\nFala 8: Aqui você encontra planos a partir de apenas R$ 1,50 por dia, sem taxa de adesão e sem limite de idade.\nFala 9: Assim, quando a família mais precisa, tudo já está organizado com cuidado, respeito e acolhimento.\nFala 10: Porque planejar também é um gesto de amor. Real Pax. Gente cuidando de gente. 📞 0800 402 2020.","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":17,"type":"reels","title":"Quanto custa um funeral?","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Algumas coisas sempre trazem lembranças especiais. 💙\n\nPode ser uma música, um lugar, um cheiro ou até uma comida que nos faz lembrar de pessoas importantes na nossa vida.\n\nSão essas memórias que mantêm vivas as histórias e os momentos que compartilhamos.\n\n💬 O que te lembra alguém especial?\nCompartilha nos comentários.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Pessoa olhando foto ou lembrança.\nEstilo emocional, cores suaves.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":20,"type":"arte","title":"Conte algo que te lembra alguém especial","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Fundo institucional com cores da marca.\nÍcone de relógio ou calendário.\nLayout limpo e direto, estilo \"aviso\".\nLogo Real Pax Costa Verde no rodapé.\n\nArte copy:\n📌 Informativo de funcionamento\n\nTerça-feira, 21 de abril\nFeriado de Tiradentes\n\nNossa central de atendimento\nfunciona normalmente 24h.\n\n📞 0800 402 2020\n📲 (24) 99871-9300\n\nReal Pax Costa Verde\nGente cuidando de gente.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":21,"type":"story","title":"Funcionamento — Tiradentes","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"O verdadeiro cuidado é percebido por quem vive a experiência. 💙\n\nAo longo do tempo, o Real Pax tem acompanhado diversas famílias oferecendo suporte, acolhimento e atendimento humanizado em momentos importantes.\n\nCada palavra de confiança reforça o nosso propósito de cuidar de pessoas com respeito e dedicação.\n\nArraste para o lado e veja alguns relatos de quem já contou com o cuidado Real Pax.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"Slide 1 — Título da série: Histórias de quem confia\nSlide 2 — Depoimento de cliente\nSlide 3 — Depoimento\nSlide 4 — Depoimento\nSlide 5 — Encerramento com marca\n\nAspas, layout elegante, depoimentos humanizados.\n\n⚠️ DEPOIMENTOS A COLETAR COM O CLIENTE","slidesNum":"5 slides","postado":false,"month":4,"day":23,"type":"carrossel","title":"Histórias de quem confia — Depoimentos","pending":true,"trafego":false,"perfil":"","imgs":[]},{"caption":"","descricao":"Mesmo padrão visual do story de Tiradentes.\nLogo Real Pax Costa Verde no rodapé.\n\nArte copy:\n📌 Informativo de funcionamento\n\nQuinta-feira, 23 de abril\n\nNossa central de atendimento\nfunciona normalmente 24h.\n\n📞 0800 402 2020\n📲 (24) 99871-9300\n\nReal Pax Costa Verde\nGente cuidando de gente.\n\n⚠️ Publicar na véspera (22/04) ou na manhã do dia 23.","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":22,"type":"story","title":"Funcionamento — 23/04","pending":false,"trafego":false,"perfil":"","imgs":[]},{"caption":"Cuidar de pessoas vai muito além de oferecer um serviço. 💙\n\nSignifica acolher, respeitar e estar presente quando as famílias mais precisam de apoio.\n\nNo Real Pax, cada atendimento é feito com atenção, empatia e responsabilidade.\n\nPorque cada história merece cuidado.\nE cada família merece respeito.\n\nEsse é o compromisso que nos move todos os dias.\n\n📞 0800 402 2020\nReal Pax | Gente cuidando de gente.","descricao":"","imgObs":"Mãos segurando, imagem humanizada.\nDestaque para as palavras principais.","roteiro":"","videoLink":"","slides":"","slidesNum":"","postado":false,"month":4,"day":28,"type":"arte","title":"Acolhimento, Tranquilidade, Respeito","pending":false,"trafego":false,"perfil":"","imgs":[]},{"month":1,"day":4,"type":"arte","title":"teste","perfil":"","caption":"","descricao":"","imgObs":"","roteiro":"","videoLink":"","slides":"","slidesNum":"","pending":false,"postado":false,"trafego":false,"imgs":[]}],"planData":{"1":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"2":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"3":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"4":{"objetivos":"Aumentar reconhecimento na cidade.","investimento":"500 reais","trafego":"500 reais em meta ads.","influenciadores":"Angra TV.","persona":"Público jovem que está começando a pensar na família a curto ou longo prazo.","observacoes":"Gravação na rádio dia 26 e após isso reunião."},"5":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"6":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"7":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"8":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"9":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"10":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"11":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""},"12":{"objetivos":"","investimento":"","trafego":"","influenciadores":"","persona":"","observacoes":""}}};
+</script>
 </body></html>
